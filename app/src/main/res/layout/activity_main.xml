@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:gravity="end"
+        android:singleLine="false"
+        android:text=" "
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buCos"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="cos"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buTan"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="tan"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buLog"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="log"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buBracketOpen"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="("
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buBracketClose"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text=")"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buSin"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="sin"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buLn"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="ln"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buSqrt"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="√"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buPi"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="𝝅"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buFactorial"
+                style="@style/calc_buttonComplex"
+                android:background="@drawable/roundedbutton"
+                android:text="n!"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buClear"
+                style="@style/calc_buttonClear"
+                android:background="@drawable/roundedbutton"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/buPower"
+                style="@style/calc_buttonPower"
+                android:background="@drawable/roundedbutton"
+                android:text="^" />
+
+            <Button
+                android:id="@+id/buPercent"
+                style="@style/calc_buttonOperations"
+                android:background="@drawable/roundedbutton"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/buDivide"
+                style="@style/calc_buttonOperations"
+                android:background="@drawable/roundedbutton"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buSeven"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/buEight"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/buNine"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/buMultiply"
+                style="@style/calc_buttonOperations"
+                android:background="@drawable/roundedbutton"
+                android:text="X" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buFour"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/buFive"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/buSix"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/buMinus"
+                style="@style/calc_buttonOperations"
+                android:background="@drawable/roundedbutton"
+                android:text="—" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buOne"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/buTwo"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/buThree"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/buPlus"
+                style="@style/calc_buttonOperations"
+                android:background="@drawable/roundedbutton"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buZero"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/buComma"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:text="," />
+
+            <Button
+                android:id="@+id/buDelete"
+                style="@style/calc_button"
+                android:background="@drawable/roundedbutton"
+                android:onClick="onClickOperation"
+                android:text="Del"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buEquals"
+                style="@style/calc_buttonEquals"
+                android:background="@drawable/roundedbutton"
+                android:onClick="onClickEquals"
+                android:text="=" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
